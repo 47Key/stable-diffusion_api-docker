@@ -4,6 +4,7 @@
 * The prompt is accessed by the following url query
     * /prompt/?prompt=YOUR_PROMPT_HERE
     * you will have to URI encode the prompt from your front-end
+* Images are stored in the /static/images directory
 * Once the success response is returned, you can access the image via <img src"YOUR_URL_HERE/static/images/image.png">
 
 * Please report any issues you have, and submit a pull request if you have a better way.
