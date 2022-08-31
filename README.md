@@ -1,10 +1,10 @@
 # Docker Container for a Flask App that Communicates with the Stability AI Image Generation API (DreamStudio)
 
-* This app will generate an image based upon the prompt you provide it, and return a JSON object with a base64 encoded image, meant to be queried as an API
+* This app will generate an image based upon the prompt you provide it, and save that image to the static folder, you can customize the image name for more storage, but for now it overwrites the image.png file
 * The prompt is accessed by the following url query
     * /prompt/?prompt=YOUR_PROMPT_HERE
     * you will have to URI encode the prompt from your front-end
-* In theory the returned Image can be used in a html image tag, like this: <img src=`data:image/png;base64, ${json.image}` />
+* Once the success response is returned, you can access the image via <img src"YOUR_URL_HERE/static/images/image.png">
 
 * Please report any issues you have, and submit a pull request if you have a better way.
 
